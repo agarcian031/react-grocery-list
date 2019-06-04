@@ -1,5 +1,6 @@
 import React from 'react'; 
 import ListItem from './ListItem'; 
+
 // {items, name} = are props 
 const List = ({items, name, listClick}) => (
   <div>

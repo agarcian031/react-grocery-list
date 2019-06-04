@@ -2,7 +2,10 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import List from './List';
-import ListForm from './ListForm';  
+import ListForm from './ListForm'; 
+import { Container} from 'semantic-ui-react'
+
+
 
 class App extends React.Component {
   state = {
@@ -61,10 +64,12 @@ class App extends React.Component {
       //     {this.renderList()} 
       //   </ul>
       // </div>
+      <Container textAlign='center'>
       <div>
       <ListForm addItem={this.addItem} />
       <List name="Grocery List" items={list} listClick={this.listClick}/>
       </div>
+       </Container>
     )
   }
 }; 
